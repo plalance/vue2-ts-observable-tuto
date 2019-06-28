@@ -5,6 +5,7 @@ web/VERSION
 web/*.js
 web/*.html
 web/*.css
+web/*.map
 web/Images
 
 # Node Module Files

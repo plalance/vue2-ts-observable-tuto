@@ -172,6 +172,7 @@ Pour interroger cet Observable, il faut y souscrire (notion de flux, file de mes
                  next(value){
                      store.dispatch(EnumActions.TOAST_TEXT, [true, value]);
                  },
+                 error(err) { console.error('OUPS: ' + err); },
                  complete(){
                      store.dispatch(EnumActions.TOAST_TEXT, [true, "Teminé"]);
                  }
@@ -195,6 +196,7 @@ Le code ci -dessus peut être optimisé pour ne pas avoir à déclarer de variab
                     next: (value) => {
                         this.$store.dispatch(EnumActions.TOAST_TEXT, [true, value]);
                     },
+                    error : (err) => { console.error('OUPS: ' + err); },
                     complete: () => {
                         this.$store.dispatch(EnumActions.TOAST_TEXT, [true, "Terminé"]);
                     }

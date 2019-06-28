@@ -60,6 +60,9 @@
                     next: (value) => {
                         this.$store.dispatch(EnumActions.TOAST_TEXT, [true, value]);
                     },
+                    error: (err) => {
+                        console.error('OUPS: ' + err);
+                    },
                     complete: () => {
                         this.$store.dispatch(EnumActions.TOAST_TEXT, [true, "Terminé"]);
                     }
