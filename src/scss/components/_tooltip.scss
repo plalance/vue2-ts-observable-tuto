@@ -1,0 +1,17 @@
+.tooltip{
+  &.tooltipped{
+
+  }
+  cursor: help;
+  background: $rouge_cerp;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  display: inline-block;
+  position: absolute;
+  margin-left: 5px;
+}

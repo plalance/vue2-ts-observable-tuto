@@ -1,0 +1,45 @@
+$rouge_cerp : rgba(206, 63, 87, 0.9);
+//$bleu_cerp : rgba(91, 132, 153, 1);
+$bleu_cerp : rgba(71, 112, 133, 1);
+$bleu_cerp_darker : #2b5469;
+
+$nvms_success: #1d9130;
+$nvms_problem: rgba(237, 117, 32, 0.85);
+
+.highlight{
+  background-color: rgba(99, 246, 57, 0.8);
+}
+
+.color-success{
+  color: $bleu_cerp;
+}
+
+.color-nvms-success{
+  color: $nvms_success;
+}
+
+.color-error{
+  color: $rouge_cerp;
+}
+
+.state{
+  &--active{
+    background-color: $nvms_success;
+    color: white;
+  }
+
+  &--inactive{
+    background-color: $rouge_cerp;
+    color: white;
+  }
+}
+
+.exerg{
+  color: $rouge_cerp;
+}
+.exerg-green{
+  color: $bleu_cerp;
+}
+.bold{
+  font-weight: bold;
+}

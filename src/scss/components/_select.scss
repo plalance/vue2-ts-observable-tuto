@@ -1,0 +1,24 @@
+.slot-product{
+  height: 20px;
+  line-height: 0;
+  width: 100%;
+  //border-bottom: 1px solid grey;
+  tr{
+    td{
+      font-size: 11px;
+      text-align: left !important;
+      line-height: 11px;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    td:first-child{
+      width: 35px !important;
+    }
+    td:nth-child(2){
+      width: 75px !important;
+    }
+    td:last-child{
+      width: auto;
+    }
+  }
+}

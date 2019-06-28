@@ -1,0 +1,121 @@
+.table{
+  &.history{
+    th{
+      cursor: pointer;
+      user-select: none;
+      position: relative;
+      // Arrows sort
+      i{
+        position: absolute;
+        right: 0;
+        transition: 0.2s ease transform;
+        &.up{
+          transform: rotate(0);
+        }
+        &.down{
+          transform: rotate(-180deg);
+        }
+      }
+    }
+    border-right: 2px solid $rouge_cerp;
+    border-left: 2px solid $rouge_cerp;
+    tr{
+      .row-index{
+        width: 20px;
+      }
+      td{
+        padding: 8px;
+      }
+      &.odd{
+        background-color: #e1e1e1;
+      }
+      &.even{
+
+      }
+      &:hover{
+        background-color: #cbcbcb;
+      }
+      &.error{
+        background-color: $rouge_cerp;
+        color: #ffffff;
+      }
+    }
+    .head-row{
+      &:hover{
+        background: unset;
+      }
+    }
+    margin-bottom: 20px;
+  }
+
+  td.with-arrow{
+    width: 12px;
+    text-align: center;
+    padding: 0 !important;
+    i{
+      display: block;
+      margin-bottom: -2px;
+    }
+  }
+  tr.selected{
+    transition: 0.15s linear background-color;
+    background-color: $bleu_cerp !important;
+    color: white;
+  }
+
+  td {
+    border-radius: 0 !important;
+    border: none !important;
+  }
+  td.left-align, td.right-align{
+    width: 45px;
+  }
+  th{
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+#revision-table{
+  tr{
+    th{
+      font-size: 12px;
+    }
+    td{
+      font-size: 14px;
+      a.btn{
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+  }
+  th.ventes1mois{ width: 60px; }
+  th.ventes3mois{ width: 60px; }
+  th.cip{ width: 80px; }
+  th.qtStock{ width: 80px; }
+  th:last-child{ width: 85px; }
+
+  .img__blocage{
+    width: 65px;
+  }
+
+  .column__blocage{
+    text-align: center;
+    line-height: 12px;
+    i{
+      font-size: 1.2em;
+    }
+    span{
+      font-size: 0.85em;
+    }
+  }
+}
+
+.dataTables_length{
+  width: 50px;
+  float: left;
+}

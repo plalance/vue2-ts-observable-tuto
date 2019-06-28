@@ -1,0 +1,116 @@
+.router-link-exact-active {
+  position: relative;
+  background-color: rgba(206, 63, 87, 0.9);
+}
+
+.router-link-exact-active:hover {
+  background-color: rgba(206, 63, 87, 0.9) !important;
+}
+
+.router-link-exact-active:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 5px;
+  background: white;
+  top: 0;
+  bottom: 0;
+}
+
+.sidenav {
+  border-right: 1px solid rgba(91, 132, 153, 1);
+  border-bottom: 1px solid rgba(91, 132, 153, 1);
+  background-color: $bleu_cerp !important;
+  transition: 0.2s ease width;
+
+  .user-view__container{
+    overflow: hidden;
+    transition: 0.2s ease height;
+    height: 205px;
+    .user-view {
+      margin-bottom: 0;
+      .background {
+        background-color: $bleu_cerp;
+      }
+      &__picto {
+        img {
+          background: white;
+        }
+      }
+    }
+  }
+
+  .user-account {
+    input{
+      color: white;
+      border: 1px solid white;
+      box-sizing: border-box;
+      padding-left: 10px;
+      padding-right: 10px;
+      &:focus{
+        border: 1px solid white;
+      }
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+
+  li > a {
+    color: white;
+    padding: 0 20px;
+    i {
+      color: white !important;
+      margin: 0 16px 0 0 !important;
+    }
+  }
+}
+
+.sidenav-trigger {
+  display: block !important;
+}
+
+.nav-wrapper {
+  .ariane {
+    margin-left: 15px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .app__sidenav {
+    position: sticky;
+    top: 0;
+    &--collapsed{
+      .sidenav{
+        overflow-x: hidden;
+        transition: 0.2s ease width;
+        width: 58px !important;
+
+        .user-view__container{
+          transition: 0.2s ease height;
+          height: 0;
+        }
+      }
+    }
+  }
+
+  .sidenav {
+    float: left;
+    position: unset;
+    height: 100% !important;
+    -webkit-transform: translateX(0) !important;
+    -moz-transform: translateX(0) !important;
+    -ms-transform: translateX(0) !important;
+    -o-transform: translateX(0) !important;
+    transform: translateX(0) !important;
+    padding-bottom: 60px;
+    background-color: #fff;
+    width: 260px !important;
+    li > a {
+      white-space: nowrap;
+    }
+  }
+  .sidenav-overlay {
+    display: none !important;
+  }
+}

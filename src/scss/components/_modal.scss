@@ -1,0 +1,110 @@
+.modal-proposal {
+
+  .modal-content {
+    padding: 20px 40px 20px 40px;
+  }
+
+  /** title **/
+  h4 {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.6rem;
+    color: $bleu_cerp;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /** subtitles **/
+  h5 {
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6rem;
+    color: $rouge_cerp;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  /** Arrow between two inputs **/
+  .input-link {
+    align-self: flex-end;
+    margin-bottom: 22px;
+    text-align: center;
+    span {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background: rgba(206, 63, 87, 0.9);
+      height: 5px;
+      width: 50%;
+      position: relative;
+      &:after {
+        position: absolute;
+        right: -8px;
+        top: -5px;
+        content: '';
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-left: 8px solid rgba(206, 63, 87, 0.9);
+      }
+    }
+  }
+
+  /** form **/
+  form {
+    .row {
+      display: flex;
+      margin-bottom: 0;
+    }
+
+    .input-field {
+      margin-bottom: 0;
+      span {
+        font-weight: bold;
+        font-size: 12px;
+      }
+      input {
+        height: 30px;
+      }
+    }
+  }
+
+  .modal-footer {
+    text-align: center;
+    .btn {
+      margin-left: 6px;
+      margin-right: 6px;
+    }
+  }
+}
+
+/** modals width and height control **/
+.modal {
+  &-w50 {
+    width: 50%;
+  }
+  &-w70 {
+    width: 70%;
+  }
+  &-w75 {
+    width: 75%;
+  }
+
+  &-h50{
+    height: 50%;
+    max-height: 90%;
+    min-height: 490px;
+  }
+
+  &-h75{
+    height: 75%;
+    max-height: 90%;
+    min-height: 490px;
+  }
+}
+.modal-floating-button{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

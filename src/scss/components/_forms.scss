@@ -1,0 +1,96 @@
+#apitypechoices {
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  outline: none;
+  height: 3rem;
+  line-height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  padding: 0;
+  display: block;
+  user-select: none;
+}
+
+.collapsible-header {
+  &.warning, &.error {
+    background-color: $rouge_cerp;
+    color: white;
+  }
+  &.success {
+    background-color: $nvms_success;
+    color: white;
+  }
+  &.problem {
+    background-color: $nvms_problem;
+    color: white;
+  }
+}
+
+#blockSaisie {
+  &.active {
+    .form-row {
+      border-right: 2px solid rgb(246, 178, 181);
+      border-left: 2px solid rgb(246, 178, 181);
+    }
+  }
+}
+
+/*
+** Drop Down list
+*/
+.dropdown-content li > a, .dropdown-content li > span {
+  color: rgba(206, 63, 87, 0.9);
+}
+
+/*
+** Materialize Radio Button
+** Border
+*/
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:before, [type="radio"].with-gap:checked + span:after {
+  border: 2px solid rgba(206, 63, 87, 0.9);
+}
+
+/*
+** Materialize Radio Button
+** Center
+*/
+[type="radio"]:checked + span:after, [type="radio"].with-gap:checked + span:after {
+  background-color: rgba(206, 63, 87, 0.9);
+}
+
+/*
+** SubAccount Selector
+*/
+
+#sub_account{
+  margin-bottom: 20px;
+  margin-top: 15px;
+  height: 35px;
+}
+
+/*** DEFAULT INPUT **/
+
+.materialize-theme{
+  border-bottom: 1px solid black;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  width: 100%;
+  height: 45px;
+  padding: 10px 25px 10px 30px;
+  box-sizing: border-box;
+  outline: none;
+
+  background-image: url("../images/interface/datamatrix.png");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: left center;
+
+  &:focus{
+    border-bottom: 1px solid $bleu_cerp;
+  }
+}

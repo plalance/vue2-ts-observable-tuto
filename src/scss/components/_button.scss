@@ -1,0 +1,82 @@
+.btn {
+  background: unset;
+  &--text-12{
+    font-size: 12px;
+  }
+  &--blue {
+    transition: 0.2s ease all !important;
+    background: white;
+    border: 1px solid $bleu_cerp;
+    color: $bleu_cerp;
+    i {
+      color: $rouge_cerp;
+    }
+    &:hover {
+      color: white;
+      i {
+        color: inherit;
+      }
+      background: $bleu_cerp;
+    }
+    &:active,
+    &:visited {
+      background: white;
+      background-color: white;
+      color: $bleu_cerp;
+      i {
+        color: $rouge_cerp;
+      }
+    }
+  }
+
+  &--red {
+    transition: 0.2s ease all !important;
+    background: white;
+    border: 1px solid $rouge_cerp;
+    color: $rouge_cerp;
+    i {
+      color: $bleu_cerp;
+    }
+    &:hover {
+      color: white;
+      i {
+        color: inherit;
+      }
+      background: $rouge_cerp;
+    }
+    &:active,
+    &:visited,
+    &:focus {
+      background: white;
+      color: $rouge_cerp;
+      i {
+        color: $rouge_cerp;
+      }
+    }
+  }
+  &--pictogram {
+    i {
+      margin-left: 0;
+    }
+  }
+  &--slim {
+    margin-right: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    min-height: 25px;
+    height: auto;
+    line-height: 25px;
+    i {
+      font-size: 16px;
+    }
+    font-size: 12px;
+  }
+}
+
+.btn-icon {
+  i {
+    font-size: 22px;
+    float: left;
+    margin-right: 5px;
+  }
+}

@@ -1,0 +1,9 @@
+.action__loader {
+   &__wrapper{
+     overflow: hidden;
+     position: absolute;
+     top: 20px;
+     right: 20px;
+     z-index: 99900;
+   }
+ }

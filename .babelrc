@@ -1,0 +1,27 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "include": [
+          "@babel/plugin-proposal-object-rest-spread"
+        ],
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 10"]
+        }
+      }
+    ],
+    "@babel/typescript"
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-syntax-decorators",
+      {
+        "decoratorsBeforeExport": true
+      }
+    ],
+    "@babel/proposal-class-properties",
+    "@babel/proposal-object-rest-spread",
+    "transform-es2015-for-of"
+  ]
+}

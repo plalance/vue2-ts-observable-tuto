@@ -1,0 +1,63 @@
+{
+  "trads": {
+    "routes": {
+      "home": "Accueil",
+      "server_status": "État des services",
+      "login": "Se connecter",
+      "logout": "Se déconnecter",
+      "history": "Historique",
+      "not_found": "Page non trouvée",
+      "revision_category": "Révision des catégories",
+      "application_propositions": "Appliquer les révisions",
+      "test_ws_talend": "Webservices Talend"
+    },
+    "services": {
+      "mg2_proposal_backend": "MG2 PROPOSAL BACKEND"
+    },
+    "interface": {
+      "send_button": "Envoyer",
+      "erase_button": "Effacer",
+      "revert_button": "Annuler opération",
+      "information_entry": "Saisie d'information",
+      "action_history": "Historique des actions",
+      "no_selected_service": "Aucun service selectionné",
+      "service_availability": "État du service",
+      "service_ok": "En fonction",
+      "service_nok": "Service non disponible",
+      "action_recap": "Récapitulatif de l'action",
+      "technical_information": "Informations techniques",
+      "service_code": "Code de service",
+      "toast_success": "Opération effectuée avec succès.",
+      "toast_error": "Opération impossible. Vérifiez le récapitulatif de l'action.",
+      "logged_as": "Connecté en tant que :",
+      "datatable": {
+        "processing": "Traitement en cours...",
+        "search": "Recherche globale&nbsp;:",
+        "lengthMenu": "Afficher _MENU_ &eacute;l&eacute;ments",
+        "info": "Affichage de l'&eacute;lement _START_ &agrave; _END_ sur _TOTAL_ &eacute;l&eacute;ments",
+        "infoEmpty": "Affichage de l'&eacute;lement 0 &agrave; 0 sur 0 &eacute;l&eacute;ments",
+        "infoFiltered": "(filtr&eacute; de _MAX_ &eacute;l&eacute;ments au total)",
+        "infoPostFix": "",
+        "loadingRecords": "Chargement en cours...",
+        "zeroRecords": "Aucun &eacute;l&eacute;ment &agrave; afficher",
+        "emptyTable": "Aucune donnée disponible dans le tableau",
+        "paginate": {
+          "first": "Premier",
+          "previous": "Pr&eacute;c&eacute;dent",
+          "next": "Suivant",
+          "last": "Dernier"
+        },
+        "aria": {
+          "sortAscending": ": activer pour trier la colonne par ordre croissant",
+          "sortDescending": ": activer pour trier la colonne par ordre décroissant"
+        }
+      },
+      "language": "Langue de l'application",
+      "service_disponibility": "État des services"
+    },
+    "language": {
+      "en": "Anglais",
+      "fr": "Français"
+    }
+  }
+}
